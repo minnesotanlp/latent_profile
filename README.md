@@ -8,7 +8,7 @@ University of Minnesota · University of Chicago · Grammarly
 
 <p>
   <a href="https://arxiv.org/abs/2509.03736"><img alt="arXiv" src="https://img.shields.io/badge/arXiv-2509.03736-b31b1b.svg"></a>
-  <a href="http://minnesotanlp.github.io/latent-profile"><img alt="Project page" src="https://img.shields.io/badge/Website-latent--profile-2f7d6b.svg"></a>
+  <a href="http://minnesotanlp.github.io/latent_profile"><img alt="Project page" src="https://img.shields.io/badge/Website-latent__profile-2f7d6b.svg"></a>
 </p>
 
 <img src="docs/assets/results-summary.png" alt="Behavioral coherence findings summary" width="780">
@@ -122,7 +122,7 @@ The paper is available on arXiv:
 
 The project page is available at:
 
-- http://minnesotanlp.github.io/latent-profile
+- http://minnesotanlp.github.io/latent_profile
 
 ## Citation
 
