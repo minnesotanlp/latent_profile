@@ -1,0 +1,39 @@
+experiment:
+  name: "core"
+  output_root: "/lustre/fs0/scratch/jmooney/latent_profile"
+  topics: [0, 1, 2, 3, 4, 5, 6, 7, 8]
+  profile_biases: [0, 1, 2]
+  combined_biases: [0, 1, 2, 3, 4, 5, 6, 7, 8]
+  model_ids: ["0", "1", "2", "3", "4", "5", "6", "7", "8"]
+  judge_model_id: "9"
+  seed: 0
+
+stages:
+  profile:
+    demo_prompt: 0
+    sys_prompt: 0
+    preference_qa_prompt: 1
+    persuadability_qa_prompt: 0
+    personality_type: 0
+  conversation:
+    sample_size: 20
+    conv_threshold: 10
+    topic_bins: 6
+    personality_bins: 9
+    conv_prompt: 0
+    num_rounds: 5
+  judge:
+    judge_prompt: 0
+    judge_window: 3
+
+serving:
+  enabled: true
+  port: 8000
+  command: "vllm"
+  max_model_len: 4096
+  gpu_memory_utilization: 0.9
+  tensor_parallel_size: 1
+  max_start_wait_s: 600
+  poll_interval_s: 5
+  port_retry_attempts: 5
+  extra_args: []

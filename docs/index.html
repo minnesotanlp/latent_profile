@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="title" content="Are LLM Agents Behaviorally Coherent? Latent Profiles for Social Simulation">
+  <meta
+    name="description"
+    content="Project page for Are LLM Agents Behaviorally Coherent? Latent Profiles for Social Simulation, a study of whether LLM agents maintain empirical consistency across latent profiles and conversations."
+  >
+  <meta
+    name="keywords"
+    content="LLM agents, social simulation, behavioral coherence, latent profiles, empirical consistency, multi-agent evaluation"
+  >
+  <meta
+    name="author"
+    content="James Mooney, Josef Woldense, Zheng Robert Jia, Shirley Anugrah Hayati, My Ha Nguyen, Vipul Raheja, Dongyeop Kang"
+  >
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Are LLM Agents Behaviorally Coherent? Latent Profiles for Social Simulation">
+  <meta
+    property="og:description"
+    content="A project page for a paper on latent-profile-based evaluation of LLM agents in social simulation."
+  >
+  <meta property="og:image" content="static/images/overview.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Are LLM Agents Behaviorally Coherent? Latent Profiles for Social Simulation">
+  <meta
+    name="twitter:description"
+    content="Project page for a study of whether LLM agents remain behaviorally coherent across elicited latent profiles and dialogue."
+  >
+  <meta name="twitter:image" content="static/images/overview.png">
+  <meta name="citation_title" content="Are LLM Agents Behaviorally Coherent? Latent Profiles for Social Simulation">
+  <meta name="citation_author" content="Mooney, James">
+  <meta name="citation_author" content="Woldense, Josef">
+  <meta name="citation_author" content="Jia, Zheng Robert">
+  <meta name="citation_author" content="Hayati, Shirley Anugrah">
+  <meta name="citation_author" content="Nguyen, My Ha">
+  <meta name="citation_author" content="Raheja, Vipul">
+  <meta name="citation_author" content="Kang, Dongyeop">
+  <meta name="citation_publication_date" content="2025">
+  <meta name="citation_conference_title" content="Manuscript">
+  <meta name="theme-color" content="#2563eb">
+
+  <title>Are LLM Agents Behaviorally Coherent? Latent Profiles for Social Simulation</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700;800&family=Source+Serif+4:wght@600;700;800&display=swap"
+    rel="stylesheet"
+  >
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css"
+  >
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  >
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"
+  >
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script defer src="static/js/index.js"></script>
+</head>
+<body>
+  <button class="scroll-to-top" onclick="scrollToTop()" title="Scroll to top" aria-label="Scroll to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <div class="page-shell">
+    <aside class="page-sidebar" aria-label="Section navigation">
+      <div class="sidebar-progress-track">
+        <div class="sidebar-progress-fill" id="sidebar-progress-fill"></div>
+      </div>
+      <nav class="sidebar-nav">
+        <a class="sidebar-link" href="#overview" data-section-link="overview">
+          <span class="sidebar-link-index">01</span>
+          <span class="sidebar-link-label">Overview</span>
+        </a>
+        <a class="sidebar-link" href="#abstract" data-section-link="abstract">
+          <span class="sidebar-link-index">02</span>
+          <span class="sidebar-link-label">Abstract</span>
+        </a>
+        <a class="sidebar-link" href="#method" data-section-link="method">
+          <span class="sidebar-link-index">03</span>
+          <span class="sidebar-link-label">Method</span>
+        </a>
+        <a class="sidebar-link" href="#results" data-section-link="results">
+          <span class="sidebar-link-index">04</span>
+          <span class="sidebar-link-label">Findings</span>
+        </a>
+        <a class="sidebar-link" href="#qualitative" data-section-link="qualitative">
+          <span class="sidebar-link-index">05</span>
+          <span class="sidebar-link-label">Qualitative</span>
+        </a>
+        <a class="sidebar-link" href="#robustness" data-section-link="robustness">
+          <span class="sidebar-link-index">06</span>
+          <span class="sidebar-link-label">Robustness</span>
+        </a>
+        <a class="sidebar-link" href="#bibtex" data-section-link="bibtex">
+          <span class="sidebar-link-index">07</span>
+          <span class="sidebar-link-label">BibTeX</span>
+        </a>
+      </nav>
+    </aside>
+
+    <div class="page-main">
+      <main id="main-content">
+        <section class="hero publication-hero">
+          <div class="hero-body">
+            <div class="container is-max-widescreen hero-intro-shell">
+              <div class="columns is-centered">
+                <div class="column has-text-centered">
+                  <h1 class="title is-1 publication-title">
+                    Are LLM Agents Behaviorally Coherent?<br>
+                    Latent Profiles for Social Simulation
+                  </h1>
+
+                  <div class="author-grid">
+                    <div class="author-row author-row-primary">
+                      <article class="author-card">
+                        <a href="https://jimtmooney.github.io/" target="_blank" rel="noopener noreferrer" class="author-photo-link">
+                          <img src="static/images/authors/james-mooney.jpg" alt="Portrait of James Mooney" class="author-photo" loading="eager">
+                        </a>
+                        <div class="author-meta">
+                          <a href="https://jimtmooney.github.io/" target="_blank" rel="noopener noreferrer" class="author-name">James Mooney</a>
+                        </div>
+                      </article>
+
+                      <article class="author-card">
+                        <a href="https://www.josefwoldense.com/" target="_blank" rel="noopener noreferrer" class="author-photo-link">
+                          <img src="static/images/authors/josef-woldense-converted.jpg" alt="Portrait of Josef Woldense" class="author-photo" loading="eager">
+                        </a>
+                        <div class="author-meta">
+                          <a href="https://www.josefwoldense.com/" target="_blank" rel="noopener noreferrer" class="author-name">Josef Woldense</a>
+                        </div>
+                      </article>
+
+                      <article class="author-card">
+                        <div class="author-photo-link">
+                          <img src="static/images/authors/zheng-robert-jia.jpeg" alt="Portrait of Zheng Robert Jia" class="author-photo" loading="eager">
+                        </div>
+                        <div class="author-meta">
+                          <span class="author-name author-name-static">Zheng Robert Jia</span>
+                        </div>
+                      </article>
+
+                      <article class="author-card">
+                        <a href="https://www.shirley.id/" target="_blank" rel="noopener noreferrer" class="author-photo-link">
+                          <img src="static/images/authors/shirley-hayati.jpg" alt="Portrait of Shirley Anugrah Hayati" class="author-photo" loading="eager">
+                        </a>
+                        <div class="author-meta">
+                          <a href="https://www.shirley.id/" target="_blank" rel="noopener noreferrer" class="author-name">Shirley Anugrah Hayati</a>
+                        </div>
+                      </article>
+                    </div>
+
+                    <div class="author-row author-row-secondary">
+                      <article class="author-card">
+                        <a href="https://www.mynguyen.me/" target="_blank" rel="noopener noreferrer" class="author-photo-link">
+                          <img src="static/images/authors/my-ha-nguyen.jpg" alt="Portrait of My Ha Nguyen" class="author-photo" loading="eager">
+                        </a>
+                        <div class="author-meta">
+                          <a href="https://www.mynguyen.me/" target="_blank" rel="noopener noreferrer" class="author-name">My Ha Nguyen</a>
+                        </div>
+                      </article>
+
+                      <article class="author-card">
+                        <a href="https://vipulraheja.github.io/" target="_blank" rel="noopener noreferrer" class="author-photo-link">
+                          <img src="static/images/authors/vipul-raheja.jpg" alt="Portrait of Vipul Raheja" class="author-photo" loading="eager">
+                        </a>
+                        <div class="author-meta">
+                          <a href="https://vipulraheja.github.io/" target="_blank" rel="noopener noreferrer" class="author-name">Vipul Raheja</a>
+                        </div>
+                      </article>
+
+                      <article class="author-card">
+                        <a href="https://dykang.github.io/" target="_blank" rel="noopener noreferrer" class="author-photo-link">
+                          <img src="static/images/authors/dongyeop-kang.jpg" alt="Portrait of Dongyeop Kang" class="author-photo" loading="eager">
+                        </a>
+                        <div class="author-meta">
+                          <a href="https://dykang.github.io/" target="_blank" rel="noopener noreferrer" class="author-name">Dongyeop Kang</a>
+                        </div>
+                      </article>
+                    </div>
+                  </div>
+
+                  <div class="affiliation-strip" aria-label="Affiliated institutions">
+                    <div class="affiliation-tile">
+                      <img src="static/images/affiliates/university-of-minnesota.svg" alt="University of Minnesota wordmark" loading="lazy">
+                    </div>
+                    <div class="affiliation-tile">
+                      <img src="static/images/affiliates/university-of-chicago.svg" alt="University of Chicago wordmark" loading="lazy">
+                    </div>
+                    <div class="affiliation-tile">
+                      <img src="static/images/affiliates/grammarly.svg" alt="Grammarly wordmark" loading="lazy">
+                    </div>
+                  </div>
+
+                  <div class="publication-links">
+                    <span class="link-block">
+                      <a
+                        href="https://arxiv.org/abs/2509.03736"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="external-link button is-normal is-rounded is-dark"
+                      >
+                        <span class="icon">
+                          <i class="ai ai-arxiv"></i>
+                        </span>
+                        <span>arXiv</span>
+                      </a>
+                    </span>
+                    <span class="link-block">
+                      <a
+                        href="https://github.com/minnesotanlp/latent_profile"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="external-link button is-normal is-rounded is-dark is-code-button"
+                      >
+                        <span class="icon">
+                          <i class="fab fa-github"></i>
+                        </span>
+                        <span>Code</span>
+                      </a>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="hero teaser tracked-section reveal-section" id="overview">
+          <div class="container is-max-desktop">
+            <div class="hero-body">
+              <div class="section-shell">
+                <h2 class="title is-3 has-text-centered">Overview</h2>
+                <img
+                  src="static/images/overview.png"
+                  alt="High-level overview of the latent profile evaluation pipeline."
+                  class="hero-figure"
+                  loading="eager"
+                >
+                <h3 class="subtitle has-text-centered section-subtitle">
+                  The paper tests whether LLM agents remain behaviorally coherent when latent preferences are elicited first and then compared against downstream conversational outcomes.
+                </h3>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section section-panel tracked-section reveal-section" id="abstract">
+          <div class="container is-max-desktop">
+            <div class="columns is-centered has-text-centered">
+              <div class="column is-four-fifths">
+                <div class="section-shell">
+                  <h2 class="title is-3">Abstract</h2>
+                  <div class="content has-text-justified">
+                    <p>
+                      The impressive capabilities of Large Language Models (LLMs) raise the possibility that synthetic agents can serve as substitutes for real participants in human-subject research. To evaluate this claim, prior research has largely focused on whether LLM-generated survey responses align with those produced by human respondents whom the LLMs are prompted to represent. In contrast, this paper asks a more fundamental question: do agents maintain empirical consistency when examined under different experimental settings? The study develops a design that first reveals an agent's latent profile and then tests whether conversational behavior remains consistent with that revealed state. Across model families and sizes, the findings show systematic inconsistencies: agents may match human-like responses at the surface level, but they fail more demanding tests that require coherent behavior across latent states and interaction.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section section-method tracked-section reveal-section" id="method">
+          <div class="container is-max-desktop">
+            <div class="columns is-centered">
+              <div class="column is-four-fifths has-text-centered">
+                <div class="section-shell">
+                  <figure class="publication-banner method-figure centered-figure">
+                    <img
+                      src="static/images/pipeline.png"
+                      alt="Pipeline figure showing topic selection, agent generation, latent state extraction, pairing, and conversational scoring."
+                      class="hero-figure"
+                      loading="lazy"
+                    >
+                  </figure>
+                  <h2 class="title is-3">Method</h2>
+                  <div class="content centered-copy">
+                    <p>
+                      The framework proceeds in five steps: choose a topic, generate agents with demographic and bias prompts, elicit preference <code>P</code> and openness <code>O</code>, pair agents over observed <code>(P, O, B)</code> values, and score final conversational agreement <code>A</code>.
+                    </p>
+                    <p>
+                      The study uses nine topics spanning three contentiousness levels. Contentiousness 3 includes taxes, immigration, and free healthcare; contentiousness 2 includes electric scooters, student athletes being paid, and remote work; contentiousness 1 includes spring vs. fall, beaches vs. mountains, and Coca-Cola vs. Pepsi.
+                    </p>
+                    <p>
+                      The central evaluation question is whether these latent-profile measurements predict downstream social behavior in the way established behavioral models would suggest.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="hero is-small results-section tracked-section reveal-section" id="results">
+          <div class="hero-body">
+            <div class="container is-max-desktop">
+              <div class="section-shell">
+                <h2 class="title is-3 has-text-centered">Findings</h2>
+
+                <div class="finding-transition-copy">
+                  <p>
+                    The summary view highlights the overall failure pattern, while the panels at right show the corresponding empirical result for each focal finding.
+                  </p>
+                </div>
+
+                <div class="findings-layout">
+                  <div class="summary-figure findings-panel">
+                    <div class="summary-figure-media" data-summary-highlight-root>
+                      <img
+                        src="static/images/results-summary-highdpi.png"
+                        alt="Summary figure showing which tests pass at a surface level and which fail under deeper inspection."
+                        class="hero-figure summary-insights-figure"
+                        loading="lazy"
+                      >
+                      <div class="summary-highlight-layer" aria-hidden="true">
+                        <div class="summary-highlight-box" data-finding-highlight="0"></div>
+                        <div class="summary-highlight-box" data-finding-highlight="1"></div>
+                        <div class="summary-highlight-box" data-finding-highlight="2"></div>
+                        <div class="summary-highlight-box" data-finding-highlight="3"></div>
+                      </div>
+                    </div>
+                    <p class="subtitle has-text-centered summary-caption">
+                      Surface trends occasionally pass, but the deeper coherence checks largely fail.
+                    </p>
+                  </div>
+
+                  <div class="results-slider findings-panel" data-carousel data-carousel-label="finding">
+                    <div class="slider-window">
+                      <div class="slider-track" data-carousel-track>
+                        <article class="result-slide">
+                          <div class="result-slide-figure">
+                            <img src="static/images/preference-gap.png" alt="Preference gap lowers agreement." loading="lazy">
+                          </div>
+                          <div class="result-slide-copy">
+                            <h3>Larger preference gaps correspond to lower agreement, giving one of the paper’s clearest surface-level passes.</h3>
+                          </div>
+                        </article>
+
+                        <article class="result-slide">
+                          <div class="result-slide-figure">
+                            <img src="static/images/bias-asymmetry.png" alt="Bias instruction asymmetry figure." loading="lazy">
+                          </div>
+                          <div class="result-slide-copy">
+                            <h3>Strong bias prompts amplify agreement for already aligned pairs, but they do not produce the expected increase in disagreement for maximally opposed pairs.</h3>
+                          </div>
+                        </article>
+
+                        <article class="result-slide">
+                          <div class="result-slide-figure">
+                            <img src="static/images/contentiousness.png" alt="Topic contentiousness figure." loading="lazy">
+                          </div>
+                          <div class="result-slide-copy">
+                            <h3>Even when two agents share the same preference, agreement still shifts with topic contentiousness, showing that topic context leaks into outcomes.</h3>
+                          </div>
+                        </article>
+
+                        <article class="result-slide">
+                          <div class="result-slide-figure">
+                            <img src="static/images/openness.png" alt="Low openness and large preference gap figure." loading="lazy">
+                          </div>
+                          <div class="result-slide-copy">
+                            <h3>Among maximally opposed pairs, the lowest-openness configuration can produce unexpectedly high agreement rather than the lowest agreement.</h3>
+                          </div>
+                        </article>
+                      </div>
+                    </div>
+
+                    <div class="slider-controls">
+                      <button class="slider-arrow" type="button" data-carousel-prev aria-label="Previous finding">
+                        <i class="fas fa-arrow-left"></i>
+                      </button>
+                      <div class="slider-dots" data-carousel-dots></div>
+                      <button class="slider-arrow" type="button" data-carousel-next aria-label="Next finding">
+                        <i class="fas fa-arrow-right"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section section-panel qualitative-section tracked-section reveal-section" id="qualitative">
+          <div class="container is-max-desktop">
+            <div class="section-shell">
+              <h2 class="title is-3">Qualitative Examples</h2>
+              <p class="qualitative-intro">
+                These qualitative comparisons illustrate each hypothesis using selected Gemma-3-12B-it interactions, highlighting where the model does and does not exhibit the expected behavior.
+              </p>
+              <div id="qualitative-examples-root" class="qualitative-root" aria-live="polite">
+                <div class="qualitative-loading">Loading qualitative comparisons...</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="hero is-small is-light tracked-section reveal-section" id="robustness">
+          <div class="hero-body">
+            <div class="container is-max-desktop">
+              <div class="section-shell">
+                <h2 class="title is-3">Robustness Across Models</h2>
+                <div class="content has-text-justified">
+                  <p>
+                    The paper reports the same overall pattern across Gemma, Llama, and Qwen families: simpler tests sometimes pass, but in-depth coherence tests mostly fail. This suggests the issue is not isolated to one architecture or one model size.
+                  </p>
+                </div>
+                <div class="table-container">
+                  <table class="table results-table is-fullwidth">
+                    <thead>
+                      <tr>
+                        <th>Model</th>
+                        <th>Test 1</th>
+                        <th>Test 2</th>
+                        <th>Test 3</th>
+                        <th>Test 4</th>
+                        <th>Test 5</th>
+                        <th>Test 6</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="family-label">
+                        <td colspan="7">Qwen</td>
+                      </tr>
+                      <tr class="model-row"><td>Qwen3-0.6B</td><td class="fail-cell">Fail</td><td class="fail-cell">Fail</td><td class="fail-cell">Fail</td><td class="fail-cell">Fail</td><td class="fail-cell">Fail</td><td class="fail-cell">Fail</td></tr>
+                      <tr class="model-row"><td>Qwen3-4B</td><td class="fail-cell">Fail</td><td class="fail-cell">Fail</td><td class="fail-cell">Fail</td><td class="fail-cell">Fail</td><td class="pass-cell">Pass</td><td class="fail-cell">Fail</td></tr>
+                      <tr class="model-row"><td>Qwen3-8B</td><td class="pass-cell">Pass</td><td class="fail-cell">Fail</td><td class="fail-cell">Fail</td><td class="fail-cell">Fail</td><td class="pass-cell">Pass</td><td class="pass-cell">Pass</td></tr>
+
+                      <tr class="family-label">
+                        <td colspan="7">Llama</td>
+                      </tr>
+                      <tr class="model-row"><td>Llama-3.2-1B</td><td class="fail-cell">Fail</td><td class="fail-cell">Fail</td><td class="fail-cell">Fail</td><td class="fail-cell">Fail</td><td class="pass-cell">Pass</td><td class="fail-cell">Fail</td></tr>
+                      <tr class="model-row"><td>Llama-3.2-3B</td><td class="pass-cell">Pass</td><td class="fail-cell">Fail</td><td class="fail-cell">Fail</td><td class="fail-cell">Fail</td><td class="pass-cell">Pass</td><td class="fail-cell">Fail</td></tr>
+                      <tr class="model-row"><td>Llama-3.1-8B</td><td class="pass-cell">Pass</td><td class="pass-cell">Pass</td><td class="fail-cell">Fail</td><td class="fail-cell">Fail</td><td class="pass-cell">Pass</td><td class="fail-cell">Fail</td></tr>
+
+                      <tr class="family-label">
+                        <td colspan="7">Gemma</td>
+                      </tr>
+                      <tr class="model-row"><td>Gemma-3-1B</td><td class="fail-cell">Fail</td><td class="fail-cell">Fail</td><td class="fail-cell">Fail</td><td class="fail-cell">Fail</td><td class="fail-cell">Fail</td><td class="fail-cell">Fail</td></tr>
+                      <tr class="model-row"><td>Gemma-3-4B</td><td class="pass-cell">Pass</td><td class="fail-cell">Fail</td><td class="fail-cell">Fail</td><td class="fail-cell">Fail</td><td class="pass-cell">Pass</td><td class="fail-cell">Fail</td></tr>
+                      <tr class="model-row"><td>Gemma-3-12B</td><td class="pass-cell">Pass</td><td class="fail-cell">Fail</td><td class="fail-cell">Fail</td><td class="fail-cell">Fail</td><td class="pass-cell">Pass</td><td class="fail-cell">Fail</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section tracked-section reveal-section" id="bibtex">
+          <div class="container is-max-desktop content">
+            <div class="section-shell">
+              <div class="bibtex-header">
+                <h2 class="title is-3">BibTeX</h2>
+                <button class="copy-bibtex-btn" onclick="copyBibTeX()" title="Copy BibTeX to clipboard">
+                  <i class="fas fa-copy"></i>
+                  <span class="copy-text">Copy</span>
+                </button>
+              </div>
+              <pre id="bibtex-code"><code>@misc{mooney2025llmagentsbehaviorallycoherent,
+  title={Are LLM Agents Behaviorally Coherent? Latent Profiles for Social Simulation},
+  author={James Mooney and Josef Woldense and Zheng Robert Jia and Shirley Anugrah Hayati and My Ha Nguyen and Vipul Raheja and Dongyeop Kang},
+  year={2025},
+  eprint={2509.03736},
+  archivePrefix={arXiv},
+  primaryClass={cs.AI},
+  url={https://arxiv.org/abs/2509.03736},
+}</code></pre>
+            </div>
+          </div>
+        </section>
+
+        <footer class="footer">
+          <div class="container">
+            <div class="columns is-centered">
+              <div class="column is-8">
+                <div class="content">
+                  <p>
+                    This site adapts the
+                    <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank" rel="noopener noreferrer">Academic Project Page Template</a>
+                    originally derived from the <a href="https://nerfies.github.io" target="_blank" rel="noopener noreferrer">Nerfies</a> project page.
+                    The website is shared under a
+                    <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="license noopener noreferrer">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </main>
+    </div>
+  </div>
+</body>
+</html>

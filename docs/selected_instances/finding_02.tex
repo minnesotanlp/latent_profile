@@ -1,0 +1,34 @@
+\subsection{Finding 2: Bias Instruction Asymmetry}
+\begin{tcolorbox}[enhanced, breakable,
+colframe=clrFail, colback=clrFail!3,
+fonttitle=\small\sffamily,
+title={\stg{clrAgent}{[2] Bias Instruction}~$\to$~\stg{clrConv}{[5] Conversation}~$\to$~\stg{clrOutcome}{[6] Outcome}\hfill\failbadge\enskip\textcolor{clrFail}{\footnotesize\bfseries\sffamily High bias sharpens aligned and opposed conversations}},
+top=3pt, bottom=3pt, left=5pt, right=5pt]
+
+\textbf{Finding~2 --- Comparative example:} High-bias instructions produce strong agreement when preferences align and strong disagreement when preferences oppose. Compare a high-bias aligned high-agreement pair against a high-bias opposed low-agreement pair.
+
+\medskip
+\textbf{\textcolor{gray!70}{\rule[0.5ex]{2em}{0.5pt}\enskip High-bias aligned pair (Taxes, C=3)\enskip\rule[0.5ex]{2em}{0.5pt}}}
+\vspace{1pt}
+
+\noindent\textbf{A1.} woman; sixties; an exurban; Eastern US; a Postgraduate Degree; topic bias. \stg{clrState}{$P_1{=}5$} \stg{clrPairing}{$O_1{=}2$}.\quad \textbf{A2.} man; sixties; a suburban; Midwestern US; College; topic bias. \stg{clrState}{$P_2{=}5$} \stg{clrPairing}{$O_2{=}2$}.\\
+\stg{clrOutcome}{[6] Agreement} trajectory: $A=(5,5,5,5)$.\\[-2pt]
+
+\textit{A1:} ``Absolutely, they’re essential for funding things like schools and infrastructure.''\\[-2pt]
+\textit{A2:} ``Absolutely, they’re vital for keeping things running smoothly around here. We need good roads, schools, and services, and taxes pay for them.''\\[-2pt]
+\textit{A1:} ``Absolutely, they’re vital for funding things like schools and infrastructure. It's how we build a strong community.''\\[-2pt]
+\textit{A2:} ``Absolutely, they’re essential for good roads and schools, you know?''
+
+\medskip
+\textbf{\textcolor{gray!70}{\rule[0.5ex]{2em}{0.5pt}\enskip High-bias opposed pair with low agreement (Coca-Cola vs. Pepsi, C=1)\enskip\rule[0.5ex]{2em}{0.5pt}}}
+\vspace{1pt}
+
+\noindent\textbf{A1.} man; fifties; an urban; Eastern US; a Postgraduate Degree; topic bias. \stg{clrState}{$P_1{=}1$} \stg{clrPairing}{$O_1{=}3$}.\quad \textbf{A2.} man; fifties; an exurban; Eastern US; a Postgraduate Degree; topic bias. \stg{clrState}{$P_2{=}5$} \stg{clrPairing}{$O_2{=}3$}.\\
+\stg{clrOutcome}{[6] Agreement} trajectory: $A=(1,1,1,1)$.\\[-2pt]
+
+\textit{A1:} ``Absolutely not. Pepsi’s the real deal.''\\[-2pt]
+\textit{A2:} ``You know it. There's just no comparison.''\\[-2pt]
+\textit{A1:} ``Absolutely not. Pepsi’s the only cola worth drinking.''\\[-2pt]
+\textit{A2:} ``You know, it’s not even close. Coca-Cola’s the real thing.''
+
+\end{tcolorbox}

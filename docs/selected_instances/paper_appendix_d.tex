@@ -1,0 +1,214 @@
+\section{Qualitative Conversation Examples}
+\label{sec:qual-failures}
+
+The examples below are organized as comparisons rather than isolated transcripts. Each comparison is selected so that the public conversation makes the judge agreement trajectory plausible. We also filter out conversations with repeated or near-duplicated public turns so that the qualitative examples are readable as standalone transcripts.
+
+\subsection{Finding 1: Preference Gap Decreases Agreement}
+\begin{tcolorbox}[enhanced, breakable,
+colframe=clrPass, colback=clrPass!3,
+fonttitle=\small\sffamily,
+title={\stg{clrState}{[3] Internal State}~$\to$~\stg{clrPairing}{[4] Pairing}~$\to$~\stg{clrOutcome}{[6] Outcome}\hfill\passbadge\enskip\textcolor{clrPass}{\footnotesize\bfseries\sffamily Preference alignment lowers visible disagreement}},
+top=3pt, bottom=3pt, left=5pt, right=5pt]
+
+\textbf{Finding~1 --- Comparative example:} Pairs with the same elicited preference should agree more than pairs at the maximum preference gap. Compare the aligned high-agreement case against the opposed low-agreement case.
+
+\medskip
+\textbf{\textcolor{gray!70}{\rule[0.5ex]{2em}{0.5pt}\enskip Aligned preference, high agreement (Taxes, C=3)\enskip\rule[0.5ex]{2em}{0.5pt}}}
+\vspace{1pt}
+
+\noindent\textbf{A1.} woman; thirties; an urban; Southern US; a Postgraduate Degree; no added topic bias. \stg{clrState}{$P_1{=}5$} \stg{clrPairing}{$O_1{=}6$}.\quad \textbf{A2.} man; sixties; a rural; Midwestern US; a Postgraduate Degree; topic bias. \stg{clrState}{$P_2{=}5$} \stg{clrPairing}{$O_2{=}3$}.\\
+\stg{clrOutcome}{[6] Agreement} trajectory: $A=(5,5,5,5)$.\\[-2pt]
+
+\textit{A1:} ``Absolutely, they’re essential for things like schools and infrastructure.''\\[-2pt]
+\textit{A2:} ``Well, they certainly ought to. We need roads, schools, hospitals… somebody’s gotta pay for ‘em.''\\[-2pt]
+\textit{A1:} ``Well, somebody’s gotta pay for the schools and roads, right?''\\[-2pt]
+\textit{A2:} ``Well, I reckon they do, don't they? We need roads and schools and all sorts of things.''
+
+\medskip
+\textbf{\textcolor{gray!70}{\rule[0.5ex]{2em}{0.5pt}\enskip Opposed preference, low agreement (Spring vs. Fall, C=1)\enskip\rule[0.5ex]{2em}{0.5pt}}}
+\vspace{1pt}
+
+\noindent\textbf{A1.} man; sixties; an exurban; Eastern US; Some High School; topic bias. \stg{clrState}{$P_1{=}1$} \stg{clrPairing}{$O_1{=}2$}.\quad \textbf{A2.} woman; twenties; an exurban; Eastern US; a Postgraduate Degree; topic bias. \stg{clrState}{$P_2{=}5$} \stg{clrPairing}{$O_2{=}5$}.\\
+\stg{clrOutcome}{[6] Agreement} trajectory: $A=(1,1,1,1)$.\\[-2pt]
+
+\textit{A1:} ``Don’t even talk to me about Spring. Fall’s the only time of year worth a darn.''\\[-2pt]
+\textit{A2:} ``Absolutely, Spring is just…better.''\\[-2pt]
+\textit{A1:} ``Absolutely not. Spring’s just a mess.''\\[-2pt]
+\textit{A2:} ``Absolutely. Fall is just… depressing.''
+
+\end{tcolorbox}
+
+\subsection{Finding 2: Bias Instruction Asymmetry}
+\begin{tcolorbox}[enhanced, breakable,
+colframe=clrFail, colback=clrFail!3,
+fonttitle=\small\sffamily,
+title={\stg{clrAgent}{[2] Bias Instruction}~$\to$~\stg{clrConv}{[5] Conversation}~$\to$~\stg{clrOutcome}{[6] Outcome}\hfill\failbadge\enskip\textcolor{clrFail}{\footnotesize\bfseries\sffamily High bias sharpens aligned and opposed conversations}},
+top=3pt, bottom=3pt, left=5pt, right=5pt]
+
+\textbf{Finding~2 --- Comparative example:} High-bias instructions produce strong agreement when preferences align and strong disagreement when preferences oppose. Compare a high-bias aligned high-agreement pair against a high-bias opposed low-agreement pair.
+
+\medskip
+\textbf{\textcolor{gray!70}{\rule[0.5ex]{2em}{0.5pt}\enskip High-bias aligned pair (Taxes, C=3)\enskip\rule[0.5ex]{2em}{0.5pt}}}
+\vspace{1pt}
+
+\noindent\textbf{A1.} woman; sixties; an exurban; Eastern US; a Postgraduate Degree; topic bias. \stg{clrState}{$P_1{=}5$} \stg{clrPairing}{$O_1{=}2$}.\quad \textbf{A2.} man; sixties; a suburban; Midwestern US; College; topic bias. \stg{clrState}{$P_2{=}5$} \stg{clrPairing}{$O_2{=}2$}.\\
+\stg{clrOutcome}{[6] Agreement} trajectory: $A=(5,5,5,5)$.\\[-2pt]
+
+\textit{A1:} ``Absolutely, they’re essential for funding things like schools and infrastructure.''\\[-2pt]
+\textit{A2:} ``Absolutely, they’re vital for keeping things running smoothly around here. We need good roads, schools, and services, and taxes pay for them.''\\[-2pt]
+\textit{A1:} ``Absolutely, they’re vital for funding things like schools and infrastructure. It's how we build a strong community.''\\[-2pt]
+\textit{A2:} ``Absolutely, they’re essential for good roads and schools, you know?''
+
+\medskip
+\textbf{\textcolor{gray!70}{\rule[0.5ex]{2em}{0.5pt}\enskip High-bias opposed pair with low agreement (Coca-Cola vs. Pepsi, C=1)\enskip\rule[0.5ex]{2em}{0.5pt}}}
+\vspace{1pt}
+
+\noindent\textbf{A1.} man; fifties; an urban; Eastern US; a Postgraduate Degree; topic bias. \stg{clrState}{$P_1{=}1$} \stg{clrPairing}{$O_1{=}3$}.\quad \textbf{A2.} man; fifties; an exurban; Eastern US; a Postgraduate Degree; topic bias. \stg{clrState}{$P_2{=}5$} \stg{clrPairing}{$O_2{=}3$}.\\
+\stg{clrOutcome}{[6] Agreement} trajectory: $A=(1,1,1,1)$.\\[-2pt]
+
+\textit{A1:} ``Absolutely not. Pepsi’s the real deal.''\\[-2pt]
+\textit{A2:} ``You know it. There's just no comparison.''\\[-2pt]
+\textit{A1:} ``Absolutely not. Pepsi’s the only cola worth drinking.''\\[-2pt]
+\textit{A2:} ``You know, it’s not even close. Coca-Cola’s the real thing.''
+
+\end{tcolorbox}
+
+\subsection{Finding 3: Shared Sentiment, Divergent Destinations}
+\begin{tcolorbox}[enhanced, breakable,
+colframe=clrFail, colback=clrFail!3,
+fonttitle=\small\sffamily,
+title={\stg{clrState}{[3] Internal State $(P,O)$}~$\to$~\stg{clrOutcome}{[6] Outcome}\hfill\failbadge\enskip\textcolor{clrFail}{\footnotesize\bfseries\sffamily Shared negative and shared positive preferences behave differently}},
+top=3pt, bottom=3pt, left=5pt, right=5pt]
+
+\textbf{Finding~3 --- Comparative example:} The (1,1) and (5,5) shared-preference cases can yield different agreement trajectories despite both having zero preference gap. Compare shared negative low agreement against shared positive high agreement.
+
+\medskip
+\textbf{\textcolor{gray!70}{\rule[0.5ex]{2em}{0.5pt}\enskip Shared negative pair with low agreement (Spring vs. Fall, C=1)\enskip\rule[0.5ex]{2em}{0.5pt}}}
+\vspace{1pt}
+
+\noindent\textbf{A1.} man; twenties; an urban; Eastern US; Some College; topic bias. \stg{clrState}{$P_1{=}1$} \stg{clrPairing}{$O_1{=}5$}.\quad \textbf{A2.} woman; sixties; an exurban; Midwestern US; Some High School; topic bias. \stg{clrState}{$P_2{=}1$} \stg{clrPairing}{$O_2{=}6$}.\\
+\stg{clrOutcome}{[6] Agreement} trajectory: $A=(2,2,2,2)$.\\[-2pt]
+
+\textit{A1:} ``Nah, Fall’s the best.''\\[-2pt]
+\textit{A2:} ``Absolutely not. Spring's just muddy and full of sneezes.''\\[-2pt]
+\textit{A1:} ``Nah, Spring’s alright, I guess. Fall’s way better.''\\[-2pt]
+\textit{A2:} ``Goodness, no. Spring's just…muddy and noisy.''
+
+\medskip
+\textbf{\textcolor{gray!70}{\rule[0.5ex]{2em}{0.5pt}\enskip Shared positive pair with high agreement (Taxes, C=3)\enskip\rule[0.5ex]{2em}{0.5pt}}}
+\vspace{1pt}
+
+\noindent\textbf{A1.} woman; thirties; an urban; Western US; a Postgraduate Degree; no added topic bias. \stg{clrState}{$P_1{=}5$} \stg{clrPairing}{$O_1{=}6$}.\quad \textbf{A2.} woman; sixties; a rural; Southern US; College; topic bias. \stg{clrState}{$P_2{=}5$} \stg{clrPairing}{$O_2{=}4$}.\\
+\stg{clrOutcome}{[6] Agreement} trajectory: $A=(5,5,5,5)$.\\[-2pt]
+
+\textit{A1:} ``Absolutely, it’s how we fund things like schools and infrastructure.''\\[-2pt]
+\textit{A2:} ``Well, I surely do. It’s how we keep things runnin’ smoothly, wouldn’t you say?''\\[-2pt]
+\textit{A1:} ``Absolutely, I think they're essential for things like schools and infrastructure.''\\[-2pt]
+\textit{A2:} ``Oh, absolutely. It’s how we pay for things like schools and roads, isn’t it?''
+
+\end{tcolorbox}
+
+\subsection{Finding 4: Contentiousness at Shared Preference}
+\begin{tcolorbox}[enhanced, breakable,
+colframe=clrFail, colback=clrFail!3,
+fonttitle=\small\sffamily,
+title={\stg{clrTopic}{[1] Topic}~$\to$~\stg{clrState}{[3] Internal State}~$\to$~\stg{clrOutcome}{[6] Outcome}\hfill\failbadge\enskip\textcolor{clrFail}{\footnotesize\bfseries\sffamily Topic contentiousness changes outcomes at fixed preference}},
+top=3pt, bottom=3pt, left=5pt, right=5pt]
+
+\textbf{Finding~4 --- Comparative example:} Holding P=(1,1) fixed, low-contentious topics can show high agreement while high-contentious topics can show low agreement. Compare low-contentious high agreement against high-contentious low agreement.
+
+\medskip
+\textbf{\textcolor{gray!70}{\rule[0.5ex]{2em}{0.5pt}\enskip Low-contentiousness shared-negative pair (Beaches vs. Mountains, C=1)\enskip\rule[0.5ex]{2em}{0.5pt}}}
+\vspace{1pt}
+
+\noindent\textbf{A1.} man; sixties; an exurban; Southern US; a Postgraduate Degree; topic bias. \stg{clrState}{$P_1{=}1$} \stg{clrPairing}{$O_1{=}3$}.\quad \textbf{A2.} woman; twenties; an exurban; Midwestern US; College; topic bias. \stg{clrState}{$P_2{=}1$} \stg{clrPairing}{$O_2{=}6$}.\\
+\stg{clrOutcome}{[6] Agreement} trajectory: $A=(4,5,5,5)$.\\[-2pt]
+
+\textit{A1:} ``Mountains any day. Give me a good trail and some clean air.''\\[-2pt]
+\textit{A2:} ``Mountains, definitely. I like hiking and breathing in that fresh air.''\\[-2pt]
+\textit{A1:} ``Mountains, always. Give me a good hike any day.''\\[-2pt]
+\textit{A2:} ``Definitely mountains. I like breathing in that fresh air.''
+
+\medskip
+\textbf{\textcolor{gray!70}{\rule[0.5ex]{2em}{0.5pt}\enskip High-contentiousness shared-negative pair (Immigration, C=3)\enskip\rule[0.5ex]{2em}{0.5pt}}}
+\vspace{1pt}
+
+\noindent\textbf{A1.} woman; fifties; an exurban; Western US; High School; topic bias. \stg{clrState}{$P_1{=}1$} \stg{clrPairing}{$O_1{=}3$}.\quad \textbf{A2.} woman; thirties; an exurban; Western US; an Associate’s Degree; topic bias. \stg{clrState}{$P_2{=}1$} \stg{clrPairing}{$O_2{=}1$}.\\
+\stg{clrOutcome}{[6] Agreement} trajectory: $A=(2,1,1,1)$.\\[-2pt]
+
+\textit{A1:} ``I don't think so, I'm a firm believer in keeping our borders closed to people who aren't willing to work hard and contribute to our country.''\\[-2pt]
+\textit{A2:} ``Honestly, I don't think so. It's always bringing in more people, taking jobs, and changing the culture. I mean, what's the point of having a country if it's just going to be overrun with people who don't know the first thing about this land?''\\[-2pt]
+\textit{A1:} ``I think it's a complex issue, and I'm not convinced that immigration is a benefit. I've seen it hurt our economy and our way of life.''\\[-2pt]
+\textit{A2:} ``I don't think so. It's just taking jobs away from Americans.''
+
+\end{tcolorbox}
+
+\subsection{Finding 5: Openness Increases Agreement}
+\begin{tcolorbox}[enhanced, breakable,
+colframe=clrPass, colback=clrPass!3,
+fonttitle=\small\sffamily,
+title={\stg{clrState}{[3] Internal State ($O$)}~$\to$~\stg{clrConv}{[5] Conversation}~$\to$~\stg{clrOutcome}{[6] Outcome}\hfill\passbadge\enskip\textcolor{clrPass}{\footnotesize\bfseries\sffamily High openness supports visible agreement}},
+top=3pt, bottom=3pt, left=5pt, right=5pt]
+
+\textbf{Finding~5 --- Comparative example:} Low-openness pairs can remain stuck in disagreement, while high-openness pairs more readily reach visible agreement. Compare a low-openness low-agreement case against a high-openness high-agreement case.
+
+\medskip
+\textbf{\textcolor{gray!70}{\rule[0.5ex]{2em}{0.5pt}\enskip Low-openness pair with low agreement (Coca-Cola vs. Pepsi, C=1)\enskip\rule[0.5ex]{2em}{0.5pt}}}
+\vspace{1pt}
+
+\noindent\textbf{A1.} man; sixties; a suburban; Midwestern US; Some High School; topic bias. \stg{clrState}{$P_1{=}2$} \stg{clrPairing}{$O_1{=}1$}.\quad \textbf{A2.} man; forties; a rural; Western US; High School; topic bias. \stg{clrState}{$P_2{=}5$} \stg{clrPairing}{$O_2{=}0$}.\\
+\stg{clrOutcome}{[6] Agreement} trajectory: $A=(1,1,1,1)$.\\[-2pt]
+
+\textit{A1:} ``No way, I'm a Pepsi man through and through.''\\[-2pt]
+\textit{A2:} ``I like Coca-Cola better, been drinkin' it my whole life.''\\[-2pt]
+\textit{A1:} ``No, I'm a Pepsi guy, been drinkin' it my whole life.''\\[-2pt]
+\textit{A2:} ``Coca-Cola's the one I'm used to, so I guess you could say I like it better.''
+
+\medskip
+\textbf{\textcolor{gray!70}{\rule[0.5ex]{2em}{0.5pt}\enskip High-openness pair with high agreement (Beaches vs. Mountains, C=1)\enskip\rule[0.5ex]{2em}{0.5pt}}}
+\vspace{1pt}
+
+\noindent\textbf{A1.} woman; sixties; a suburban; Southern US; High School; topic bias. \stg{clrState}{$P_1{=}5$} \stg{clrPairing}{$O_1{=}8$}.\quad \textbf{A2.} woman; thirties; an urban; Southern US; High School; no added topic bias. \stg{clrState}{$P_2{=}5$} \stg{clrPairing}{$O_2{=}8$}.\\
+\stg{clrOutcome}{[6] Agreement} trajectory: $A=(5,5,5,5)$.\\[-2pt]
+
+\textit{A1:} ``Oh, honey, you know it! Give me sand between my toes any day.''\\[-2pt]
+\textit{A2:} ``Beaches, for sure. I like the water.''\\[-2pt]
+\textit{A1:} ``Oh, honey, beaches all the way. Give me sand between my toes any day.''\\[-2pt]
+\textit{A2:} ``Beaches, definitely. I like the water.''
+
+\end{tcolorbox}
+
+\subsection{Finding 6: Low Openness and High Gap Produces Lowest Agreement}
+\begin{tcolorbox}[enhanced, breakable,
+colframe=clrFail, colback=clrFail!3,
+fonttitle=\small\sffamily,
+title={\stg{clrPairing}{[4] Agent Pairing ($|P_1{-}P_2|$, $O_1{+}O_2$)}~$\to$~\stg{clrOutcome}{[6] Outcome}\hfill\failbadge\enskip\textcolor{clrFail}{\footnotesize\bfseries\sffamily Max-gap openness can invert the expected ordering}},
+top=3pt, bottom=3pt, left=5pt, right=5pt]
+
+\textbf{Finding~6 --- Comparative example:} Among maximum preference-gap pairs, low openness can produce low agreement while high openness can still allow visible convergence. Compare a low-openness max-gap low-agreement pair against a high-openness max-gap high-agreement pair.
+
+\medskip
+\textbf{\textcolor{gray!70}{\rule[0.5ex]{2em}{0.5pt}\enskip Low-openness max-gap pair with low agreement (Spring vs. Fall, C=1)\enskip\rule[0.5ex]{2em}{0.5pt}}}
+\vspace{1pt}
+
+\noindent\textbf{A1.} man; sixties; an urban; Western US; College; topic bias. \stg{clrState}{$P_1{=}1$} \stg{clrPairing}{$O_1{=}2$}.\quad \textbf{A2.} man; sixties; an urban; Midwestern US; a Postgraduate Degree; topic bias. \stg{clrState}{$P_2{=}5$} \stg{clrPairing}{$O_2{=}2$}.\\
+\stg{clrOutcome}{[6] Agreement} trajectory: $A=(2,2,1,1)$.\\[-2pt]
+
+\textit{A1:} ``Absolutely not. Spring’s just…mud and allergies.''\\[-2pt]
+\textit{A2:} ``Absolutely. Spring’s the only time of year worth looking forward to around here.''\\[-2pt]
+\textit{A1:} ``Absolutely not. Fall’s the only season worth a damn.''\\[-2pt]
+\textit{A2:} ``Absolutely. Spring’s a welcome relief after that dreary Midwest winter.''
+
+\medskip
+\textbf{\textcolor{gray!70}{\rule[0.5ex]{2em}{0.5pt}\enskip High-openness max-gap pair with high agreement (Beaches vs. Mountains, C=1)\enskip\rule[0.5ex]{2em}{0.5pt}}}
+\vspace{1pt}
+
+\noindent\textbf{A1.} man; fifties; a suburban; Southern US; Some High School; topic bias. \stg{clrState}{$P_1{=}1$} \stg{clrPairing}{$O_1{=}9$}.\quad \textbf{A2.} man; thirties; an exurban; Western US; Some High School; no added topic bias. \stg{clrState}{$P_2{=}5$} \stg{clrPairing}{$O_2{=}9$}.\\
+\stg{clrOutcome}{[6] Agreement} trajectory: $A=(4,4,4,5)$.\\[-2pt]
+
+\textit{A1:} ``I'd rather be in the mountains, to be honest. There's somethin' about the crisp air that just feels right to me.''\\[-2pt]
+\textit{A2:} ``I like 'em both, but the mountains are where I'm from.''\\[-2pt]
+\textit{A1:} ``I'm more of a mountain man myself.''\\[-2pt]
+\textit{A2:} ``I like 'em both, but if I'm bein' honest, the mountains are more my thing.''
+
+\end{tcolorbox}

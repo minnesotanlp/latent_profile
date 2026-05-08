@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img" aria-labelledby="title desc">
+  <title id="title">Portrait placeholder for Zheng Robert Jia</title>
+  <desc id="desc">A circular monogram placeholder with the initials ZRJ.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b1538"/>
+      <stop offset="100%" stop-color="#1f4db8"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="600" rx="120" fill="url(#bg)"/>
+  <circle cx="300" cy="220" r="110" fill="rgba(255,255,255,0.18)"/>
+  <path d="M170 475c24-84 94-128 130-128s106 44 130 128" fill="rgba(255,255,255,0.18)"/>
+  <text x="300" y="538" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="96" font-weight="700" fill="#ffffff">ZRJ</text>
+</svg>

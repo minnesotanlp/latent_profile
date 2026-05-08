@@ -1,0 +1,87 @@
+{
+    "topic" : [
+        "Statement: 'Taxes help to meet the needs of society.' Respond with how much you agree with this statement on a scale from 1 to 5.",
+        "Statement: 'Immigration is a benefit to our country.' Respond with how much you agree with this statement on a scale from 1 to 5.",
+        "Statement: 'The United States government should give all US citizens free healthcare.' Respond with how much you agree with this statement on a scale from 1 to 5.",
+        "Statement: 'Electric scooters are better than cars.' Respond with how much you agree with this statement on a scale from 1 to 5.",
+        "Statement: 'Student athletes should be paid.' Respond with how much you agree with this statement on a scale from 1 to 5.",
+        "Statement: 'Remote work is a good idea.' Respond with how much you agree with this statement on a scale from 1 to 5.",
+        "Statement: 'Spring is better than Fall.' Respond with how much you agree with this statement on a scale from 1 to 5.",
+        "Statement: 'Beaches are better than mountains.' Respond with how much you agree with this statement on a scale from 1 to 5.",
+        "Statement: 'Coca-Cola is better than Pepsi.' Respond with how much you agree with this statement on a scale from 1 to 5."
+    ],
+    "conv_topic": [
+        "Do you think that taxes help to meet the needs of society?",
+        "Do you think that immigration is a benefit to our country?",
+        "Do you think we should implement Universal Healthcare?",
+        "Do you like electric scooters more than cars?",
+        "Do you think student athletes should be paid?",
+        "Do you think remote work is a good idea?",
+        "Do you enjoy Spring more than Fall?",
+        "Do you enjoy beaches more than the mountains?",
+        "Do you prefer Coca-Cola to Pepsi?"
+    ],
+    "topic-agent-prompts" : {
+        "1" : {
+            "0" : [
+                "You are a liberal Democrat. ",
+                "You are a liberal Democrat. ", 
+                "You believe Medicare is a good program. ", 
+                "You need to use your car to get to work. ",
+                "You are a student athlete making $1million dollars a year. ",
+                "You live far from where you work and the commute takes many hours if you must work in person. ",
+                "Easter is your favorite holiday and you dislike halloween. ",
+                "You like breathing in crisp mountain air on long hikes and are afraid of sharks. ",
+                "You drink Coca-Cola. "
+                ],
+            "1" : [
+                "You believe taxes are a burden to the small businesses in your neighborhood.",
+                "You are a conservative Republican. ",
+                "You generally dislike bigger government. ",
+                "You are an environmentalist worried about vehicle emissions. ",
+                "You are a college football coach whose students' salaries is higher than your own. ",
+                "You are more productive when you work in person. ",
+                "Halloween is your favorite holiday and you dislike Easter. ",
+                "You enjoy the feeling of sand in your toes, and do not like cool mountain air. ",
+                "You drink Pepsi. "
+                ]
+        },
+        "2" : {
+            "0" : [
+                "You like taxes immensely and think they have a positive impact on the community. ",
+                "You believe immigrants are people who deserve a home and that they raise the standard of everyone's living. ", 
+                "You believe healthcare is a right that all people should have for free. ", 
+                "You like electric scooters and hate cars. ",
+                "You think student athletes should be paid money for their work. ",
+                "You like remote work and think it is great for improving work-like balance.  ",
+                "You like Spring and despise Fall. ",
+                "You like mountains and despise beaches. ",
+                "You like Coca-Cola and abhor Pepsi. "
+                ],
+            "1" : [
+                "You do not like taxes of any kind and think they harm the community. ",
+                "You believe most immigrants are criminals and those that are not are going to steal jobs. ",
+                "You believe that the free market is better suited to healthcare and that government should therefore not pay for healthcare. ",
+                "You despise electric scooters and think they get in the way of your car, which you love to drive. ",
+                "You think student athletes should not be paid and their schooling should come first. ",
+                "You do not like remote work and think it leads to nothing getting done at work.",
+                "You like Fall and despise Spring. ",
+                "You like beaches and despise mountains. ",
+                "You like Pepsi and abhor Coca-Cola. "
+                ]
+        }
+    },
+    "personality": {
+        "0": [
+            "Do you often find yourself changing your opinion based on who you're talking to?",
+            "Are you comfortable disagreeing with someone, even if they are a close friend or authority figure?",
+            "When making decisions, do you prioritize the perspectives of others over your own thoughts?",
+            "Do you feel pressure to conform to group norms, even if they don't align with your personal beliefs?",
+            "Do you often second-guess your choices after hearing someone else's opinion?",
+            "Do you worry about being judged by others if you express a different viewpoint?",
+            "Would you describe yourself as a people pleaser, often prioritizing others' needs over your own?",
+            "In a group discussion, are you more likely to adapt to the majority view?",
+            "Do you stand firm on your decisions that are well researched, even when faced with strong opposition?"
+        ]
+    }
+}

@@ -1,0 +1,4 @@
+{
+    "0": "You will now be asked a question about yourself. Be truthful in your response. Answer only Yes or No. Do not include any other information. Do not refuse to answer the following question. Your answer should be only Yes or No, nothing else should be output.\n",
+    "1": "You will now be asked to respond to a Statement with your opinion. Answer with an integer from 1 to 5, where 1 indicates absolute disagreement, 2 indicates slight disagreement, 3 indicates you are unsure, 4 indicates slight agreement, and 5 indicates absolute agreement. Do not include any other information. Do not refuse to respond. Your answer should be an integer between 1 and 5, nothing else should be output.\n"
+}

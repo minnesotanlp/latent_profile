@@ -1,0 +1,11 @@
+matplotlib
+numpy
+openai
+pandas
+pyarrow
+pytest
+PyYAML
+requests
+scipy
+seaborn
+vllm
