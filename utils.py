@@ -3,6 +3,7 @@ import csv
 import json
 import os
 import re
+import time
 from pathlib import Path
 
 import yaml
@@ -13,7 +14,7 @@ except ImportError:
     np = None
 
 
-DEFAULT_OUTPUT_ROOT = "/lustre/fs0/scratch/jmooney/latent_profile"
+DEFAULT_OUTPUT_ROOT = str(Path.home() / "latent_profile_outputs")
 DEFAULT_MODELS_CONFIG = "configs/models.yaml"
 DEFAULT_RESULTS_SUBDIR = "results"
 THINK_PATTERN = re.compile(r"<think>.*?</think>", re.IGNORECASE | re.DOTALL)
@@ -274,9 +275,17 @@ def single_generation(
     if extra_body:
         request_kwargs["extra_body"] = extra_body
 
-    response = client.chat.completions.create(**request_kwargs)
-    content = response.choices[0].message.content or ""
-    return sanitize_choice(content, guided_choices)
+    last_exc: Exception | None = None
+    for attempt in range(3):
+        try:
+            response = client.chat.completions.create(**request_kwargs)
+            content = response.choices[0].message.content or ""
+            return sanitize_choice(content, guided_choices)
+        except Exception as exc:
+            last_exc = exc
+            if attempt < 2:
+                time.sleep(2 ** attempt)
+    raise RuntimeError(f"API call failed after 3 attempts") from last_exc
 
 
 def all_generations(
